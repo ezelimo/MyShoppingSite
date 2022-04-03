@@ -1,0 +1,268 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  background-color: #eef4f6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea,
+input {
+  background-color: #dce4e7;
+  border: 1px solid #484652;
+  border-radius: 5px;
+  padding: 7px 15px;
+  width: 350px;
+}
+
+
+button {
+  border: 1px solid rgb(31, 30, 30);
+  background-color: #dce4e7;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+  background-color: #484652;
+  color: #dce4e7;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #6c7a83;
+  border-bottom: 1px solid #484652;
+  border-radius: 0px 0px 5px 5px;
+}
+.navbar-left{
+  display: flex;
+  margin-right: 50%;
+  align-items: center;
+  flex: 1 0 0%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  flex: 1 0 0%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.basketshop{
+  margin-left: 5px;
+}
+
+.search-input-div {
+  position: relative;
+  margin: 0px 15px;
+}
+
+#search-input {
+  width: 250px;
+}
+
+.search-input-icon {
+  margin-left: auto;
+  position: absolute;
+  line-height: 24px;
+  font-size: 24px;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+#basket-badge {
+  font-weight: bold;
+  margin-right: 2px;
+}
+#navbar-basket-container {
+  margin: 5px;
+}
+.navbar-title {
+  font-size: 30px;
+  font-style: italic;
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left:5px;
+  padding: 5px 15px;
+  background-color: #dce4e7;
+  border: 1px solid #484652;
+  border-radius:5px;
+  font-weight:50;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 100%;
+  max-width:1400px ;
+  padding:15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0px auto;
+}
+
+.outer-div {
+  height: 685px;
+  width: 380px;
+  padding: 5px;
+  margin: 10px;
+  border: 3px solid #6c7a83;
+  background-color: #c7d2d8;
+  border-radius:5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #484652;
+  font-weight: bold;
+}
+
+.product-img {
+  display:block;
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+}
+.product-name{
+  text-align: center;
+  margin-top:10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #484652
+}
+.product-description{
+  margin-top:10px;
+}
+.product-price{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid #6c7a83;
+}
+.btn-div {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.58);
+  
+  
+}
+.btn-price {
+  color: #484652;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.btn-div:hover .overlay {
+  opacity:1;
+  
+}
+
+.toadd{
+  margin: 0px auto;
+  padding:15px;
+  font-style: italic;
+  font-size: 20px;
+  color: #484652;
+}
+
+
+.footer{
+  position: relative;
+  margin-top:50px;
+  max-width: 100%;
+  padding:10px 10vw;
+  padding: bottom 80px;
+  background-color:#6c7a83;
+  height:100px;
+}
+.footer-content{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  text-decoration: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #484652;
+  font-size: 20px;
+}
+.add-pro{
+  margin: 0px auto;
+  padding:15px;
+  color: #484652;
+}
+.searchpro{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  color: #484652;
+}
+#product-id{
+  font-size: 1px;
+  color: #c7d2d8;
+
+}
+#add-product-form{
+  text-align: center;
+}
+
+#add-product-form label {
+ margin-right: 10px;
+}
+
+.add-product-form-question{
+  margin-bottom: 10px;
+}
+.label{
+  display: block;
+  text-align: center;
+  margin-bottom:10px;
+} 
+#address-form{
+  text-align: center;
+  margin-bottom: 10px;
+}
+#payment-form{
+  text-align: center;
+}
+#btn-pay{
+  margin-top: 20px;
+  margin-left: 820px;
+}

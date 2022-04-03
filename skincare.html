@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./skincare.css" />
+</head>
+
+<title>SKIN CARE</title>
+
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="navbar-title">SKIN CARE PRODUCTS</h1>
+      <nav class="navbar-left">
+        <button style="font-size: 20px;" onclick="document.location='./skincare.html'">Products</button>
+        <button onclick="document.location='basket.html'" class="basketshop" id="basket">
+          <span id="basket-badge"></span>
+          <span style="font-size: 20px;">&#128722;</span>
+      </nav>
+      <div class="navbar-right">
+        <div class="search-input-div">
+          <input style="font-size: 20px;" id="search-input" type="text" placeholder="Search..." />
+          <span id="search-button" class="search-input-icon" onclick="document.location='search.html'">&#x1F50E;&#xFE0E;</span>
+        </div>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <form id="add-product-form">
+    <div class="add-product-form-question">
+      <label>Name</label>
+      <input id="productTitle" name="title" type="text" />
+    </div>
+    <div class="add-product-form-question">
+      <label>Description</label>
+      <input id="productDesc"  name="description" type="text" />
+    </div>
+    <div class="add-product-form-question">
+      <label>Image Url</label>
+      <input  id="productImg"  name="image_url" type="text" />
+    </div>
+    <div class="add-product-form-question">
+      <label>Price</label>
+      <input id="productPrice"  name="price" type="number" />
+    </div>
+  </form>
+
+  <button class="add-pro" onclick="addNewProduct()" >+ Add Product</button>
+  <p class="toadd">Hover over the image to add it to the cart.</p>
+  <div class="container" id="container">
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+    <span>MSKU CENG</span>
+    <span>CENG 3502 - Dynamic Web Programming</span>
+    <span>Ezel Karadirek - 180709036</span>
+    </div>
+  </footer>
+
+  <script src="./products.js"></script>
+  <script src="./design2.js"></script>
+</body>
+
+</html>

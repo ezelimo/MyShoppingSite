@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./skincare.css" />
+</head>
+
+<title>PAYMENT</title>
+
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="navbar-title">SKIN CARE PRODUCTS</h1>
+      <nav class="navbar-left">
+        <button style="font-size: 20px;" onclick="document.location='skincare.html'">Products</button>
+        <button onclick="document.location='basket.html'" class="basketshop" id="basket">
+          <span id="basket-badge"></span>
+          <span style="font-size: 20px;">&#128722;</span>
+      </nav>
+      <div class="navbar-right">
+        <div class="search-input-div">
+          <input style="font-size: 20px;" id="search-input" type="text" placeholder="Search..." />
+          <span id="search-button" class="search-input-icon" onclick="searchproducts()">&#x1F50E;&#xFE0E;</span>
+        </div>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <form id="address-form">
+    <p class="form-name">ADDRESS</p>
+    <div class="payment-form-question">
+      <label>Full Name</label>
+      <input id="fullName" name="title" type="text" />
+    </div>
+    <div class="payment-form-question">
+      <label>Email</label>
+      <input id="email"  name="description" type="text" />
+    </div>
+    <div class="payment-form-question">
+      <label>Address</label>
+      <input  id="address"  name="image_url" type="text" />
+    </div>
+    <div class="payment-form-question">
+      <label>City</label>
+      <input id="city"  name="price" type="text" />
+    </div>
+  </form>
+  <form id="payment-form">
+    <p class="form-name">PAYMENT</p>
+    <div class="payment-form-question">
+      <label>Full Name</label>
+      <input id="payment-fullName" name="title" type="text" />
+    </div>
+    <div class="payment-form-question">
+      <label>Card Number</label>
+      <input id="card-number"  name="description" type="text" />
+    </div>
+    <div class="payment-form-question">
+      <label>Expiry Date</label>
+      <input  id="expiry-date"  name="image_url" type="text" />
+    </div>
+    <div class="payment-form-question">
+      <label>CVC Code</label>
+      <input id="cvc"  name="price" type="text" />
+    </div>
+  </form>
+          <input id="btn-pay" type="submit" value="Continue to checkout" class="button">
+        </form>
+      </div>
+    </div>
+
+</body>
+
+</html>

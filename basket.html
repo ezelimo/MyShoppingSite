@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./skincare.css" />
+</head>
+<title>BASKET</title>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <button onclick="document.location='skincare.html'" class="navbar-title">SKIN CARE PRODUCTS</button>
+            <nav class="navbar-left">
+                <button style="font-size: 20px;" onclick="document.location='skincare.html'">Products</button>
+                <button onclick="document.location='basket.html'" class="basketshop" id="basket">
+                    <span id="basket-badge"></span>
+                    <span style="font-size: 20px;">&#128722;</span>
+            </nav>
+            <div class="navbar-right">
+                <div class="search-input-div">
+                    <input style="font-size: 20px;" id="search-input" type="text" placeholder="Search..." />
+                    <span id="search-button" class="search-input-icon" onclick="searchBooks()">&#x1F50E;&#xFE0E;</span>
+                </div>
+
+
+                </button>
+            </div>
+        </nav>
+        
+    </header>
+    <button class="continueShop" onclick="document.location='products.html'">Continue Shopping</button>
+    <button class="buy-btn" onclick="document.location='payment.html'">Buy</button>
+    <div class="container" id="basket-container">
+    </div>
+
+    <script src="./basket.js"></script>
+</body>
+
+</html>
